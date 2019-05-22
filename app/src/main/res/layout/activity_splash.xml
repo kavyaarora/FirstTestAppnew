@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            >
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/c1"
+                app:layout_constraintVertical_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+
+
+                    android:layout_marginStart="8dp"
+
+
+                    android:layout_marginEnd="8dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.199"
+                    app:srcCompat="@drawable/logo" />
+            </android.support.constraint.ConstraintLayout>
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@+id/c1"
+                android:id="@+id/c2"
+                app:layout_constraintVertical_weight="2">
+                <EditText
+
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter Username"
+                    android:paddingLeft="15dp"
+
+                    android:layout_marginStart="25dp"
+
+                    android:layout_marginEnd="25dp"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                 />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Enter Password"
+                    android:paddingLeft="15dp"
+
+                    android:layout_marginStart="25dp"
+
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/username" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Login"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="15dp"
+
+
+                    android:layout_marginStart="35dp"
+
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#000000"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pass" />
+            </android.support.constraint.ConstraintLayout>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
